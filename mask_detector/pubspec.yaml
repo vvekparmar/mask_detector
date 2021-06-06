@@ -1,0 +1,33 @@
+name: mask_detector
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_google_places: ^0.2.8
+  google_place: ^0.3.3
+  http: ^0.12.1
+  uuid: ^2.0.4
+  latlong: ^0.6.1
+  flutter_local_notifications: ^4.0.1+2
+  google_maps_flutter: ^2.0.1
+  location: ^3.2.1
+  geocoder: ^0.2.1
+
+  flutter_icons: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
