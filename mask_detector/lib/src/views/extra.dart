@@ -105,7 +105,6 @@ class _MapUIState extends State<MapUI> {
   @override
   void initState() {
     super.initState();
-    //getCurrentLocation(LatLng(widget.currentPosition.latitude, widget.currentPosition.longitude));
     initialLocation = CameraPosition(
       target: LatLng(
           widget.currentPosition.latitude, widget.currentPosition.longitude),
@@ -214,6 +213,7 @@ class _MapUIState extends State<MapUI> {
                   ),
                   Container(
                     width: width * 0.65,
+                    height: height * 0.25,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -456,7 +456,6 @@ class _MapUIState extends State<MapUI> {
             height: height * 0.05,
           ),
           InkWell(
-            //add to address list or add to DB
             onTap: () async {
               setState(() {
                 myLocation = MyLocation(addressType, place);

@@ -126,7 +126,7 @@ class _HomeViewState extends State<HomeView> {
                         Titletext(
                           address[index].name + ' Address',
                           fontweight: FontWeight.w900,
-                          size: 18,
+                          size: 15,
                           color: Colors.orange,
                         ),
                         Divider(
@@ -135,7 +135,8 @@ class _HomeViewState extends State<HomeView> {
                         ),
                         Titletext(
                           address[index].address,
-                          maxLine: 2,
+                          maxLine: 3,
+                          size: 12,
                         ),
                       ],
                     ),
@@ -180,13 +181,8 @@ class _HomeViewState extends State<HomeView> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) =>
-                          // AddAddressView(
-                          //       address: address,
-                          //     )),
-                          MapUI(
-                              address: address,
-                              currentPosition: _currentPosition)),
+                      builder: (context) => MapUI(
+                          address: address, currentPosition: _currentPosition)),
                 ).then(onGoBack);
               }),
         ],
